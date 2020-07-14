@@ -41,7 +41,7 @@ velVec(iSwitch+1:end) = vFinal;
 
 U = cumtrapz(T, velVec);
 
-U(iSwitch+1:end) += (9.81 * mVehicle)/kRope; # Apply force necessary to decelerate by 1 G w spring
+##U(iSwitch+1:end) += (9.81 * mVehicle)/kRope; # Apply force necessary to decelerate by 1 G w spring
 
 
 names = {'vehicleVelocity','vehiclePosition'}
